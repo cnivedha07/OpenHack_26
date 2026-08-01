@@ -66,6 +66,7 @@ app = FastAPI()
 
 @app.get("/")
 def root():
+    
     return {
         "status": "online",
         "message": "TrustFed Backend Running"
