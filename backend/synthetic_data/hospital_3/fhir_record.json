@@ -1,0 +1,29 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "hospital": "Hospital 3",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "FHIR-P301",
+        "name": [
+          {
+            "family": "Sharma",
+            "given": [
+              "Amit"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+91 9876543210"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1985-04-12"
+      }
+    }
+  ]
+}

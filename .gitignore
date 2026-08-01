@@ -1,0 +1,22 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+
+# Node
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Next.js
+.next/
+frontend/.next/
+
+# Build output
+dist/
+build/
+
+# VS Code
+.vscode/

@@ -1,0 +1,113 @@
+import { DashboardSummary } from "@/types";
+
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
+
+async function apiFetch<T = any>(endpoint: string, options?: RequestInit): Promise<T> {
+  const headers: Record<string, string> = {};
+  if (options?.body && !(options.body instanceof FormData)) {
+    headers["Content-Type"] = "application/json";
+  }
+
+  const doFetch = async (baseUrl: string) => {
+    const res = await fetch(`${baseUrl}${endpoint}`, {
+      ...options,
+      headers: {
+        ...headers,
+        ...(options?.headers || {}),
+      },
+    });
+
+    if (!res.ok) {
+      let errorMessage = `HTTP ${res.status}: ${res.statusText}`;
+      try {
+        const errorData = await res.json();
+        if (errorData.detail) {
+          errorMessage = typeof errorData.detail === "string" ? errorData.detail : JSON.stringify(errorData.detail);
+        } else if (errorData.message) {
+          errorMessage = errorData.message;
+        }
+      } catch {
+        // Response was not JSON
+      }
+      throw new Error(errorMessage);
+    }
+
+    return await res.json();
+  };
+
+  try {
+    return await doFetch(API_BASE_URL);
+  } catch (error: any) {
+    if (error instanceof TypeError && (error.message === "Failed to fetch" || error.message.includes("fetch"))) {
+      // Try fallback between localhost and 127.0.0.1 (IPv4 vs IPv6 resolution mismatch fix)
+      const altUrl = API_BASE_URL.includes("localhost")
+        ? API_BASE_URL.replace("localhost", "127.0.0.1")
+        : API_BASE_URL.replace("127.0.0.1", "localhost");
+      try {
+        return await doFetch(altUrl);
+      } catch {
+        // Fallback also failed
+      }
+      throw new Error(`Unable to connect to backend server at ${API_BASE_URL}. Please ensure the backend server is running.`);
+    }
+    throw error;
+  }
+}
+
+export async function fetchDashboardMetrics(): Promise<DashboardSummary> {
+  return apiFetch<DashboardSummary>("/metrics");
+}
+
+export async function startFederatedRound() {
+  return apiFetch("/train/start", { method: "POST" });
+}
+
+export async function stopFederatedRound() {
+  return apiFetch("/train/stop", { method: "POST" });
+}
+
+export async function pauseFederatedRound() {
+  return apiFetch("/train/pause", { method: "POST" });
+}
+
+export async function resumeFederatedRound() {
+  return apiFetch("/train/resume", { method: "POST" });
+}
+
+export async function resetFederatedTraining() {
+  return apiFetch("/train/reset", { method: "POST" });
+}
+
+export async function toggleDifferentialPrivacy(enabled: boolean) {
+  return apiFetch("/train/dp/toggle", {
+    method: "POST",
+    body: JSON.stringify({ enabled }),
+  });
+}
+
+export async function fetchFitReport() {
+  return apiFetch("/train/fit-report");
+}
+
+export async function fetchSystemLogs() {
+  return apiFetch("/logs");
+}
+
+export async function fetchValidationReport() {
+  return apiFetch("/validation");
+}
+
+export async function toggleAttack(hospital_id: string, attack_type: string, intensity: number = 1.0) {
+  return apiFetch("/attack/toggle", {
+    method: "POST",
+    body: JSON.stringify({ hospital_id, attack_type, intensity }),
+  });
+}
+
+export async function anonymizeSampleText(text: string) {
+  return apiFetch("/privacy/anonymize", {
+    method: "POST",
+    body: JSON.stringify({ text }),
+  });
+}
+
