@@ -73,3 +73,29 @@ class AttackLogModel(Base):
     trust_penalty = Column(Float, default=15.0)
     action_taken = Column(String, default="Isolated Hospital")
     timestamp = Column(DateTime, default=datetime.utcnow)
+
+
+class HospitalAccountModel(Base):
+    __tablename__ = "hospital_accounts"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    hospital_id = Column(String, ForeignKey("hospitals.id"), nullable=False)
+    username = Column(String, unique=True, nullable=False)
+    hashed_password = Column(String, nullable=False)
+    role = Column(String, default="hospital", nullable=False)
+    is_active = Column(Boolean, default=True)
+    created_at = Column(DateTime, default=datetime.utcnow)
+    last_login = Column(DateTime, nullable=True)
+
+
+class AdminAccountModel(Base):
+    __tablename__ = "admin_accounts"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    username = Column(String, unique=True, nullable=False)
+    hashed_password = Column(String, nullable=False)
+    role = Column(String, default="admin", nullable=False)
+    is_active = Column(Boolean, default=True)
+    created_at = Column(DateTime, default=datetime.utcnow)
+    last_login = Column(DateTime, nullable=True)
+

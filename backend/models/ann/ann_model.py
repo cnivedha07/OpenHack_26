@@ -8,8 +8,9 @@ class MedicalANNModule(nn.Module):
     Processes Blood Pressure, Sugar, Heart Rate, SpO2, BMI, Hemoglobin, Platelets, Age, Weight, Temp.
     Predicts Disease Risk, Mortality Risk, Readmission Risk, and Severity Score.
     """
-    def __init__(self, input_features: int = 10, embed_dim: int = 128):
+    def __init__(self, input_features: int = 8, embed_dim: int = 128):
         super(MedicalANNModule, self).__init__()
+
         self.fc1 = nn.Linear(input_features, 64)
         self.bn1 = nn.BatchNorm1d(64)
         self.fc2 = nn.Linear(64, 128)

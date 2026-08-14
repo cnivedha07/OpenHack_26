@@ -15,7 +15,10 @@ class TrustWeightedAggregator:
     ) -> List[np.ndarray]:
         """
         Performs trust-weighted average over valid client parameters.
+        Separates misbehavior detection (Trust Score, Trust >= 40) from sample size representation (Sample Count).
+        Formula: alpha_i = (N_i * (Trust_i / 100.0)) / SUM(N_j * (Trust_j / 100.0))
         """
+
         valid_updates = [u for u in updates if u[2] >= min_trust_threshold]
 
         if not valid_updates:

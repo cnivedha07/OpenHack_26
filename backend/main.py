@@ -3,6 +3,7 @@ from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from database.database import init_db
 from api.routes import router as api_router
+from api.auth_routes import auth_router
 from api.websocket import ws_manager
 from utils.generator import generate_synthetic_hospital_datasets
 import os
@@ -35,7 +36,9 @@ def startup_event():
     data_dir = os.path.join(os.path.dirname(__file__), "synthetic_data")
     generate_synthetic_hospital_datasets(data_dir)
 
+app.include_router(auth_router)
 app.include_router(api_router)
+
 
 @app.get("/")
 def read_root():

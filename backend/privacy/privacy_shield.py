@@ -67,6 +67,27 @@ class PrivacyShieldEngine:
 
         return redacted_text, audit_log
 
+    def propose_redactions(self, text: str) -> List[Dict[str, Any]]:
+        """
+        Scans raw clinical text and returns proposed entity redactions for human-in-the-loop review.
+        Each proposal contains entity_type, start_index, end_index, proposed_token, and review_status.
+        """
+        proposals = []
+        for entity_type, pattern in self.PATTERNS.items():
+            for match in re.finditer(pattern, text, flags=re.IGNORECASE):
+                val = match.group(0)
+                if val and len(val.strip()) > 0:
+                    proposals.append({
+                        "entity_type": entity_type,
+                        "matched_value": val[:3] + "***" + val[-2:] if len(val) > 5 else "***",
+                        "start_index": match.start(),
+                        "end_index": match.end(),
+                        "proposed_token": self.REDACTION_TOKEN,
+                        "review_status": "PENDING_APPROVAL"
+                    })
+        return proposals
+
+
     def anonymize_tabular(self, record: Dict[str, Any]) -> Tuple[Dict[str, Any], List[Dict[str, Any]]]:
         """
         Anonymizes structured dict / tabular medical records.

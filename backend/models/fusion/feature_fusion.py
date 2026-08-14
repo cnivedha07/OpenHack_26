@@ -8,7 +8,7 @@ class MultimodalFeatureFusionEngine(nn.Module):
     Fuses high-dimensional feature vectors from CNN (Vision), ANN (Tabular), and BERT (Text).
     Uses Cross-Attention & Gated Multi-Head Attention Fusion to produce a Unified Patient Representation.
     """
-    def __init__(self, embed_dim: int = 128, num_heads: int = 4):
+    def __init__(self, embed_dim: int = 128, num_heads: int = 4, num_classes: int = 2):
         super(MultimodalFeatureFusionEngine, self).__init__()
         self.embed_dim = embed_dim
         
@@ -20,8 +20,9 @@ class MultimodalFeatureFusionEngine(nn.Module):
         self.fusion_fc2 = nn.Linear(embed_dim * 2, embed_dim)
         self.bn = nn.BatchNorm1d(embed_dim)
         
-        # Final Diagnosis / Patient Outcome Prediction Head
-        self.global_diagnostic_head = nn.Linear(embed_dim, 5) # 5 class prognosis
+        # Final Diagnosis / Risk Prediction Head (2 classes: Low Risk vs High Risk)
+        self.global_diagnostic_head = nn.Linear(embed_dim, num_classes)
+
 
     def forward(self, cnn_embed: torch.Tensor, ann_embed: torch.Tensor, bert_embed: torch.Tensor):
         # Input shape for each: [B, embed_dim]

@@ -1,171 +1,171 @@
-patient_id,patient_name,aadhaar_number,age,blood_pressure,heart_rate,oxygen_saturation,blood_sugar,bmi,hemoglobin,platelets,doctor_notes
-P-10000,Patient_0,8270-1860-6390,83,140,92,93.5,151,20.1,12.8,259834,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10001,Patient_1,6191-6734-7265,22,108,84,92.3,185,29.3,13.6,386386,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10002,Patient_2,1466-5426-6578,46,110,76,95.7,236,21.4,15.1,437681,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10003,Patient_3,9322-2685-1769,54,94,92,96.5,215,32.2,15.8,257522,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10004,Patient_4,7949-3433-6311,55,131,106,92.5,172,33.4,13.4,172612,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10005,Patient_5,6051-7420-2184,25,150,61,98.1,86,25.7,11.2,375049,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10006,Patient_6,5555-4385-7396,82,111,73,95.6,83,32.1,11.9,418615,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10007,Patient_7,9666-3558-8849,34,110,99,96.1,228,18.6,11.1,316703,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10008,Patient_8,3047-3747-1189,62,159,99,95.5,221,31.2,14.6,390069,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10009,Patient_9,3734-4005-5658,21,90,98,95.2,177,22.0,12.8,373131,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10010,Patient_10,2899-8734-2267,53,94,65,96.4,114,32.6,14.0,181348,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10011,Patient_11,2528-4556-4890,48,101,65,93.2,167,18.5,13.7,345804,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10012,Patient_12,9838-6393-9792,36,135,62,93.4,200,27.1,11.4,413321,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10013,Patient_13,9433-8513-3612,78,123,66,98.8,106,30.2,13.2,285832,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10014,Patient_14,8041-7235-6486,71,138,67,99.5,237,22.5,12.2,444923,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10015,Patient_15,8099-1775-9226,56,134,101,94.9,177,21.5,13.3,433780,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10016,Patient_16,4152-2585-4943,36,116,74,94.1,108,19.8,12.1,231889,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10017,Patient_17,8555-4073-2021,56,115,106,97.1,84,23.6,15.6,203551,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10018,Patient_18,4843-8989-7873,84,136,88,95.2,189,27.2,12.0,292635,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10019,Patient_19,6675-1161-5297,62,145,92,92.2,73,20.3,16.3,196819,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10020,Patient_20,1995-8629-2016,30,152,89,93.2,162,24.3,13.3,362781,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10021,Patient_21,8869-7439-8892,75,137,98,97.7,222,18.6,15.7,308059,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10022,Patient_22,7863-8916-9529,37,150,86,97.2,210,31.2,14.5,339420,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10023,Patient_23,1878-5887-5859,78,115,95,92.2,230,20.5,15.0,174596,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10024,Patient_24,7331-9571-9684,56,125,88,93.8,85,22.9,15.2,209182,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10025,Patient_25,8208-6276-3062,18,90,97,93.8,239,18.8,13.8,278803,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10026,Patient_26,1064-9006-3568,20,97,92,97.3,177,25.2,14.0,289978,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10027,Patient_27,6463-3027-3695,79,141,96,92.2,195,31.5,13.8,449058,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10028,Patient_28,6258-6618-7736,80,136,86,92.8,124,24.6,14.2,195379,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10029,Patient_29,1391-6892-4561,42,145,92,98.3,239,21.3,11.2,395900,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10030,Patient_30,7184-4099-7278,73,103,63,93.4,103,30.2,13.2,408517,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10031,Patient_31,9392-4104-8215,50,117,81,97.2,227,30.7,14.3,287084,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10032,Patient_32,3454-9996-3731,55,91,61,93.9,82,21.2,14.3,331187,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10033,Patient_33,9154-6056-9110,23,115,69,92.8,210,30.4,15.4,419295,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10034,Patient_34,4840-2028-8385,75,103,64,93.9,87,33.2,14.6,207716,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10035,Patient_35,1502-7910-7938,61,148,69,97.7,229,21.1,16.5,373725,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10036,Patient_36,5488-1206-6134,62,145,92,98.8,165,30.5,12.6,317450,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10037,Patient_37,6977-8721-8035,49,96,97,98.6,192,29.5,13.0,323724,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10038,Patient_38,2484-8858-1863,62,92,72,95.1,108,25.8,13.1,353502,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10039,Patient_39,3790-8408-9755,78,112,90,97.3,115,19.4,13.6,294539,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10040,Patient_40,6116-7019-2757,64,107,106,93.6,98,19.7,15.6,271999,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10041,Patient_41,8574-7374-7892,38,127,95,94.3,131,31.7,12.3,264793,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10042,Patient_42,2678-4242-5636,53,104,104,99.1,85,33.8,15.3,162289,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10043,Patient_43,2059-7668-4157,36,153,83,92.1,190,29.0,13.2,326048,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10044,Patient_44,6915-3693-4627,37,117,74,92.7,79,25.4,14.3,324668,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10045,Patient_45,6450-2663-6592,74,128,88,93.6,227,28.5,14.5,381513,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10046,Patient_46,8392-2306-7776,35,146,67,92.2,222,27.7,13.1,407368,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10047,Patient_47,6864-8526-9901,64,106,64,93.4,172,24.4,13.8,236365,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10048,Patient_48,6575-6530-5413,66,133,88,96.6,153,19.5,13.3,380662,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10049,Patient_49,4748-1663-2998,31,114,106,95.3,202,31.2,11.4,325211,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10050,Patient_50,8994-2495-4304,32,106,63,99.1,134,24.3,13.4,329785,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10051,Patient_51,4763-6232-2853,48,102,71,98.5,72,31.2,11.5,222588,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10052,Patient_52,7585-2291-4581,18,114,104,94.7,211,22.4,13.2,213646,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10053,Patient_53,8554-8280-2636,71,157,61,94.0,189,18.5,14.3,415798,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10054,Patient_54,4696-1698-5737,20,99,86,95.0,227,21.0,14.2,430887,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10055,Patient_55,1854-9164-6855,33,156,90,96.7,137,25.8,14.6,371097,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10056,Patient_56,8392-7528-6249,74,107,95,94.1,215,33.1,11.5,355244,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10057,Patient_57,6172-2707-6791,29,123,95,96.9,106,20.1,14.6,269735,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10058,Patient_58,6535-5931-4510,33,97,85,95.2,222,31.7,12.7,305683,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10059,Patient_59,1202-5218-9958,41,129,102,96.4,142,26.7,13.2,257971,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10060,Patient_60,5389-3327-9004,45,131,86,95.4,212,31.3,15.7,162149,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10061,Patient_61,3931-8777-1197,25,130,64,94.3,118,23.1,11.0,388976,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10062,Patient_62,8125-2930-7287,53,95,79,99.5,190,31.5,14.2,192668,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10063,Patient_63,9800-5282-3511,25,141,70,98.0,157,30.5,14.3,238204,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10064,Patient_64,1659-3811-8098,75,115,69,93.1,209,22.1,13.2,361830,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10065,Patient_65,7546-2986-9338,77,153,99,98.9,106,20.5,12.3,346501,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10066,Patient_66,3911-2734-2843,67,148,97,95.9,130,32.0,12.3,315140,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10067,Patient_67,9680-3976-2959,45,145,65,99.1,193,33.4,15.9,369861,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10068,Patient_68,6759-7694-3385,58,148,67,98.3,108,19.0,13.4,290507,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10069,Patient_69,5736-2802-9155,81,159,82,95.4,132,29.8,12.8,375160,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10070,Patient_70,9120-7616-6534,44,122,106,92.2,115,32.6,13.5,333321,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10071,Patient_71,5061-1262-7287,80,142,85,94.1,157,31.8,14.7,187384,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10072,Patient_72,9815-3049-6423,34,111,105,96.3,80,33.5,11.8,231929,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10073,Patient_73,5548-4108-8158,50,110,102,97.0,131,30.3,13.5,226153,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10074,Patient_74,8400-4170-3255,46,159,71,94.0,146,25.4,14.2,385128,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10075,Patient_75,2154-5499-7295,30,159,85,93.1,222,23.3,16.2,225388,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10076,Patient_76,7197-2648-6539,63,93,72,98.6,121,23.5,12.4,181401,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10077,Patient_77,5199-9445-3557,52,151,99,99.8,73,29.7,13.0,352903,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10078,Patient_78,6592-1098-3200,23,151,77,96.2,128,30.1,13.1,269503,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10079,Patient_79,3961-5973-5433,64,113,84,93.4,141,21.6,14.3,382601,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10080,Patient_80,3869-1956-9352,42,144,92,94.2,217,32.0,13.0,277834,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10081,Patient_81,6699-7944-5493,83,98,106,92.1,162,29.6,13.9,184084,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10082,Patient_82,5911-4987-7015,27,92,99,99.2,132,27.2,15.3,401459,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10083,Patient_83,2218-5496-5735,73,120,102,92.9,123,25.8,14.9,260641,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10084,Patient_84,5555-9050-4446,47,129,71,96.6,186,26.9,13.5,255111,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10085,Patient_85,2045-7893-2693,22,125,103,94.2,179,21.0,15.8,288299,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10086,Patient_86,4436-9754-6895,50,113,95,96.4,143,21.7,14.1,312982,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10087,Patient_87,4354-1225-5893,82,95,107,97.1,176,19.9,14.0,448185,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10088,Patient_88,8022-6600-8996,35,155,63,98.6,126,20.9,11.2,384386,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10089,Patient_89,8683-5642-8679,66,93,64,93.6,238,25.5,16.4,346553,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10090,Patient_90,9208-8339-3205,28,95,96,92.1,72,26.7,11.7,410337,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10091,Patient_91,2069-4444-2060,43,140,67,93.1,189,18.8,12.3,277556,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10092,Patient_92,3327-4420-1301,80,151,101,99.1,75,30.9,11.3,345246,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10093,Patient_93,1606-4170-1699,76,146,108,98.9,74,23.1,14.5,176160,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10094,Patient_94,6088-1190-1980,44,155,87,96.7,74,32.6,12.2,396242,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10095,Patient_95,3975-7102-2184,66,97,90,96.7,123,33.5,12.0,167633,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10096,Patient_96,4327-4394-9319,50,115,68,97.3,116,21.4,11.5,429158,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10097,Patient_97,2816-6854-7709,18,140,88,93.4,78,25.7,11.6,199104,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10098,Patient_98,1569-6442-2895,38,134,73,99.2,168,18.5,14.2,218388,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10099,Patient_99,3733-4863-8455,72,133,99,95.3,89,27.8,14.8,166014,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10100,Patient_100,5014-2686-4009,23,94,100,95.0,191,27.9,13.2,242578,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10101,Patient_101,8806-1154-2409,22,159,81,96.1,130,22.3,13.6,314827,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10102,Patient_102,1784-9096-8560,20,115,70,92.4,192,27.2,14.8,190390,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10103,Patient_103,8343-8206-6596,70,157,82,93.3,232,22.0,11.1,435855,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10104,Patient_104,6801-3806-1537,40,108,60,97.8,151,21.0,12.8,241658,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10105,Patient_105,6986-2841-9716,70,109,105,92.7,131,28.6,16.4,207993,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10106,Patient_106,7971-6625-3950,54,101,96,96.8,214,23.6,14.2,355768,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10107,Patient_107,8992-5780-3368,34,136,80,93.9,72,27.6,12.4,308285,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10108,Patient_108,7655-9173-5495,18,90,85,95.1,229,25.2,13.9,396860,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10109,Patient_109,7002-7614-6919,68,103,105,94.3,82,33.8,12.9,419565,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10110,Patient_110,1853-5146-4769,62,153,95,94.8,189,20.8,13.9,368008,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10111,Patient_111,1574-2148-7293,21,127,82,97.7,194,25.7,11.7,167727,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10112,Patient_112,7457-8509-5777,79,126,60,94.3,158,29.0,11.7,154358,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10113,Patient_113,4854-3491-4124,82,100,99,96.5,142,24.6,11.8,407681,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10114,Patient_114,6691-4051-1004,49,92,74,95.8,137,33.6,16.2,244018,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10115,Patient_115,6222-6315-5869,51,122,80,97.2,211,29.7,15.0,444054,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10116,Patient_116,1876-8027-5142,56,95,106,99.4,170,28.7,11.9,276888,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10117,Patient_117,7966-8079-8987,43,139,68,97.8,167,30.2,12.0,379104,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10118,Patient_118,7799-5465-1635,51,99,68,93.7,80,33.3,15.0,343510,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10119,Patient_119,2693-5752-9311,71,94,69,92.2,174,32.6,11.9,259847,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10120,Patient_120,1830-6177-9932,20,112,85,94.1,136,29.7,12.3,446037,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10121,Patient_121,9308-6949-3838,67,99,100,96.7,192,30.1,16.3,226329,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10122,Patient_122,2150-8560-2931,29,133,94,92.4,98,20.8,12.4,181007,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10123,Patient_123,2664-2081-1512,82,91,84,95.9,206,20.1,14.6,320604,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10124,Patient_124,8805-6237-1559,71,102,85,96.7,222,27.3,16.4,162323,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10125,Patient_125,4672-8404-4343,22,129,70,94.6,145,18.8,13.1,262356,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10126,Patient_126,5070-1580-8004,74,91,97,98.1,239,26.0,11.1,260944,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10127,Patient_127,9130-4147-5249,34,154,61,92.8,78,21.8,12.3,354451,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10128,Patient_128,2679-4506-8253,64,152,66,92.6,109,23.9,15.6,428600,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10129,Patient_129,3744-6188-3141,40,106,77,97.8,94,30.5,15.8,181367,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10130,Patient_130,7617-3479-7484,31,98,86,95.9,74,33.1,15.2,204624,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10131,Patient_131,8421-5452-6881,83,104,93,97.4,208,19.6,11.6,384565,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10132,Patient_132,7665-3849-8390,68,113,86,95.4,193,26.8,15.4,218008,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10133,Patient_133,7905-3489-5611,55,127,76,93.9,107,32.2,16.1,266492,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10134,Patient_134,3839-9527-6878,81,124,102,98.5,141,19.8,14.3,222240,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10135,Patient_135,7303-1851-2687,55,138,103,98.3,202,31.3,16.2,351659,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10136,Patient_136,7833-3427-5000,67,158,83,97.5,159,24.0,15.5,422900,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10137,Patient_137,6052-3738-6732,47,151,84,94.1,215,23.5,14.7,448522,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10138,Patient_138,6387-9002-6536,68,149,66,96.7,106,33.7,14.2,285327,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10139,Patient_139,4913-2066-8723,80,139,65,94.9,129,21.6,12.9,275703,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10140,Patient_140,5380-5107-6726,69,98,83,92.7,97,29.2,11.9,315575,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10141,Patient_141,4373-9945-3082,55,123,92,99.2,150,31.2,14.3,224069,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10142,Patient_142,9967-7748-1417,47,124,108,93.1,183,19.1,12.7,379189,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10143,Patient_143,9306-9808-4974,68,90,88,99.5,109,28.9,15.8,401051,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10144,Patient_144,4267-1825-8668,22,129,102,95.5,114,33.2,16.5,275541,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10145,Patient_145,6745-1412-8543,46,153,81,93.5,131,20.4,15.1,339648,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10146,Patient_146,8587-1728-8164,21,111,85,96.3,162,32.4,11.5,406353,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10147,Patient_147,9867-6988-3504,27,149,87,98.9,184,27.7,12.6,421830,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10148,Patient_148,3967-3786-2122,73,153,109,97.8,136,28.1,11.6,281733,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10149,Patient_149,5079-2571-6073,34,100,80,98.4,125,28.0,14.6,325915,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10150,Patient_150,6104-3143-7806,34,103,108,97.2,109,23.1,15.2,245673,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10151,Patient_151,8357-4440-4766,51,149,66,97.5,167,33.0,16.1,192828,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10152,Patient_152,6644-3914-5968,23,119,76,98.7,109,33.2,13.4,422670,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10153,Patient_153,6917-9787-1728,70,124,79,94.0,160,28.2,16.0,175592,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10154,Patient_154,2365-5492-1698,83,126,100,95.9,102,30.6,15.8,441126,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10155,Patient_155,8186-1395-8400,60,94,108,93.7,75,28.0,12.7,412351,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10156,Patient_156,9082-5171-5360,40,115,79,99.8,216,26.0,15.8,382041,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10157,Patient_157,3502-1717-3782,72,151,81,99.5,149,28.7,13.1,380008,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10158,Patient_158,5946-6486-9335,33,93,87,92.3,237,27.1,12.6,274982,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10159,Patient_159,5980-8266-5491,25,131,99,97.6,161,27.8,14.6,406911,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10160,Patient_160,8192-6588-8651,21,107,108,99.3,166,30.6,12.8,218619,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10161,Patient_161,4636-2167-2062,21,129,66,93.4,128,26.0,14.5,310400,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10162,Patient_162,3156-8860-6161,73,128,60,96.5,128,19.1,14.4,301175,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10163,Patient_163,6305-7541-5729,42,103,91,99.2,117,21.0,14.1,320963,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10164,Patient_164,8330-6334-9924,84,121,72,92.3,238,25.3,13.1,291826,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10165,Patient_165,5330-9010-7801,84,140,89,97.5,82,29.7,14.0,381055,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10166,Patient_166,5846-7731-8241,44,127,82,94.3,176,27.7,14.3,248540,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10167,Patient_167,1953-3539-8056,49,112,78,99.3,114,28.6,14.0,252747,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10168,Patient_168,2542-6293-2191,67,152,91,99.7,158,25.9,13.4,336994,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
-P-10169,Patient_169,7313-7938-3681,78,104,89,99.5,239,28.0,11.1,179301,"Patient Name: John Doe, Aadhaar: 1234-5678-9012. Admitted with mild fever. Dr. Smith attending."
+patient_id,patient_name,aadhaar_number,age,blood_pressure,heart_rate,oxygen_saturation,blood_sugar,bmi,hemoglobin,platelets,doctor_notes,risk_level
+P-10000,Patient_0,3190-3712-3192,49,141,97,98.4,234,28.1,16.0,271999,"Patient Name: Patient_0, Aadhaar: 3190-3712-3192. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10001,Patient_1,2248-5033-2997,68,104,83,98.4,235,31.9,12.2,264793,"Patient Name: Patient_1, Aadhaar: 2248-5033-2997. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10002,Patient_2,4687-5018-2970,75,150,64,98.8,152,33.2,14.4,162289,"Patient Name: Patient_2, Aadhaar: 4687-5018-2970. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10003,Patient_3,9389-6765-2202,43,110,93,99.2,205,20.8,14.5,326048,"Patient Name: Patient_3, Aadhaar: 9389-6765-2202. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10004,Patient_4,9135-6567-8667,63,113,65,96.0,178,32.9,15.0,324668,"Patient Name: Patient_4, Aadhaar: 9135-6567-8667. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10005,Patient_5,6742-6788-6408,46,92,81,96.0,134,26.1,11.7,381513,"Patient Name: Patient_5, Aadhaar: 6742-6788-6408. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",0
+P-10006,Patient_6,9669-1922-1419,21,111,70,98.3,155,22.5,14.9,407368,"Patient Name: Patient_6, Aadhaar: 9669-1922-1419. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",0
+P-10007,Patient_7,3204-2120-1950,30,142,107,97.1,214,25.6,16.0,236365,"Patient Name: Patient_7, Aadhaar: 3204-2120-1950. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10008,Patient_8,3336-6373-3243,56,91,75,97.5,140,33.7,12.0,380662,"Patient Name: Patient_8, Aadhaar: 3336-6373-3243. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10009,Patient_9,3645-5612-2865,32,119,92,98.3,114,26.1,12.3,325211,"Patient Name: Patient_9, Aadhaar: 3645-5612-2865. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",0
+P-10010,Patient_10,7028-8326-7371,46,127,68,99.0,201,23.6,16.3,329785,"Patient Name: Patient_10, Aadhaar: 7028-8326-7371. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10011,Patient_11,7359-8863-4228,46,91,65,94.7,105,28.3,12.0,222588,"Patient Name: Patient_11, Aadhaar: 7359-8863-4228. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10012,Patient_12,4719-3371-3891,49,153,75,95.0,139,22.2,15.7,213646,"Patient Name: Patient_12, Aadhaar: 4719-3371-3891. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10013,Patient_13,4756-5225-1094,19,149,88,92.7,228,19.7,13.7,415798,"Patient Name: Patient_13, Aadhaar: 4756-5225-1094. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10014,Patient_14,3674-7898-1793,64,110,62,96.6,88,20.5,12.4,430887,"Patient Name: Patient_14, Aadhaar: 3674-7898-1793. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",0
+P-10015,Patient_15,3116-6779-7166,39,122,79,92.3,177,20.5,15.8,371097,"Patient Name: Patient_15, Aadhaar: 3116-6779-7166. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10016,Patient_16,1814-1345-9554,44,147,95,95.7,236,20.9,13.4,355244,"Patient Name: Patient_16, Aadhaar: 1814-1345-9554. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10017,Patient_17,3443-8783-1984,84,111,78,96.3,160,20.7,13.8,269735,"Patient Name: Patient_17, Aadhaar: 3443-8783-1984. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",0
+P-10018,Patient_18,8790-1827-4531,73,138,85,94.3,159,28.4,13.0,305683,"Patient Name: Patient_18, Aadhaar: 8790-1827-4531. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10019,Patient_19,8147-5451-4876,38,148,62,96.7,88,21.3,14.3,257971,"Patient Name: Patient_19, Aadhaar: 8147-5451-4876. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10020,Patient_20,6959-1126-4177,64,131,78,92.2,108,23.9,11.9,162149,"Patient Name: Patient_20, Aadhaar: 6959-1126-4177. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10021,Patient_21,9795-7024-6109,76,149,79,92.3,195,32.4,13.2,388976,"Patient Name: Patient_21, Aadhaar: 9795-7024-6109. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10022,Patient_22,5146-8196-4368,23,104,91,98.5,210,25.8,16.3,192668,"Patient Name: Patient_22, Aadhaar: 5146-8196-4368. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10023,Patient_23,4797-2792-6732,36,151,66,94.8,195,28.8,12.4,238204,"Patient Name: Patient_23, Aadhaar: 4797-2792-6732. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10024,Patient_24,4476-4417-2645,74,151,100,93.0,127,21.2,14.6,361830,"Patient Name: Patient_24, Aadhaar: 4476-4417-2645. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10025,Patient_25,4030-3872-4072,20,136,92,96.1,217,21.5,12.8,346501,"Patient Name: Patient_25, Aadhaar: 4030-3872-4072. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10026,Patient_26,2854-5021-5662,18,151,99,98.1,130,19.1,15.3,315140,"Patient Name: Patient_26, Aadhaar: 2854-5021-5662. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10027,Patient_27,7514-6031-3708,75,140,98,93.7,196,21.1,11.7,369861,"Patient Name: Patient_27, Aadhaar: 7514-6031-3708. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10028,Patient_28,8112-9393-4507,55,144,77,96.9,174,22.8,16.3,290507,"Patient Name: Patient_28, Aadhaar: 8112-9393-4507. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10029,Patient_29,7456-5212-8970,32,153,99,92.7,236,21.2,13.5,375160,"Patient Name: Patient_29, Aadhaar: 7456-5212-8970. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10030,Patient_30,9766-1536-2625,51,92,60,92.4,70,19.9,12.3,333321,"Patient Name: Patient_30, Aadhaar: 9766-1536-2625. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10031,Patient_31,8973-9577-9070,78,140,70,96.2,200,20.4,11.4,187384,"Patient Name: Patient_31, Aadhaar: 8973-9577-9070. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10032,Patient_32,9666-9609-7490,52,96,87,96.3,161,25.6,11.9,231929,"Patient Name: Patient_32, Aadhaar: 9666-9609-7490. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10033,Patient_33,4600-7783-5971,81,110,84,97.0,182,21.7,13.9,226153,"Patient Name: Patient_33, Aadhaar: 4600-7783-5971. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10034,Patient_34,2205-2990-6299,42,128,109,97.7,222,24.1,12.9,385128,"Patient Name: Patient_34, Aadhaar: 2205-2990-6299. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10035,Patient_35,4572-6975-7320,41,107,82,99.7,125,26.3,15.6,225388,"Patient Name: Patient_35, Aadhaar: 4572-6975-7320. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",0
+P-10036,Patient_36,5380-5757-3713,29,93,90,96.1,230,29.2,13.4,181401,"Patient Name: Patient_36, Aadhaar: 5380-5757-3713. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10037,Patient_37,6588-1966-5944,35,149,89,94.6,235,19.1,12.4,352903,"Patient Name: Patient_37, Aadhaar: 6588-1966-5944. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10038,Patient_38,4432-1688-5243,32,103,101,98.3,186,30.9,14.4,269503,"Patient Name: Patient_38, Aadhaar: 4432-1688-5243. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10039,Patient_39,4701-9533-6182,44,98,94,94.1,203,28.2,14.9,382601,"Patient Name: Patient_39, Aadhaar: 4701-9533-6182. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10040,Patient_40,7704-5422-2759,77,142,66,95.5,127,19.8,11.9,277834,"Patient Name: Patient_40, Aadhaar: 7704-5422-2759. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10041,Patient_41,3482-9058-1951,63,91,75,92.6,113,32.0,11.9,184084,"Patient Name: Patient_41, Aadhaar: 3482-9058-1951. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10042,Patient_42,9914-3079-3717,34,149,85,92.2,229,32.8,11.2,401459,"Patient Name: Patient_42, Aadhaar: 9914-3079-3717. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10043,Patient_43,5524-9477-8311,70,133,107,99.6,130,19.4,15.1,260641,"Patient Name: Patient_43, Aadhaar: 5524-9477-8311. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",0
+P-10044,Patient_44,8186-3065-1768,25,97,108,98.6,116,22.8,14.7,255111,"Patient Name: Patient_44, Aadhaar: 8186-3065-1768. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",0
+P-10045,Patient_45,6490-7645-6083,44,136,61,97.5,218,31.0,13.6,288299,"Patient Name: Patient_45, Aadhaar: 6490-7645-6083. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10046,Patient_46,6232-6797-5926,63,124,60,95.2,149,30.1,15.6,312982,"Patient Name: Patient_46, Aadhaar: 6232-6797-5926. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10047,Patient_47,7016-4335-9038,67,125,107,93.4,187,21.4,15.4,448185,"Patient Name: Patient_47, Aadhaar: 7016-4335-9038. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10048,Patient_48,5873-2481-7305,20,139,71,93.2,233,21.7,14.2,384386,"Patient Name: Patient_48, Aadhaar: 5873-2481-7305. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10049,Patient_49,4451-1054-8643,81,93,64,94.0,216,24.2,15.8,346553,"Patient Name: Patient_49, Aadhaar: 4451-1054-8643. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10050,Patient_50,4462-1832-6954,61,91,96,96.3,89,26.0,12.1,410337,"Patient Name: Patient_50, Aadhaar: 4462-1832-6954. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",0
+P-10051,Patient_51,9519-8221-4310,70,95,91,97.6,215,28.1,11.6,277556,"Patient Name: Patient_51, Aadhaar: 9519-8221-4310. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10052,Patient_52,4300-7722-8218,41,143,68,97.2,116,24.2,12.5,345246,"Patient Name: Patient_52, Aadhaar: 4300-7722-8218. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10053,Patient_53,8776-4675-4054,77,93,100,94.2,118,25.7,11.3,176160,"Patient Name: Patient_53, Aadhaar: 8776-4675-4054. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10054,Patient_54,8970-3143-6207,20,143,94,99.5,83,30.1,13.9,396242,"Patient Name: Patient_54, Aadhaar: 8970-3143-6207. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10055,Patient_55,3538-5547-6619,37,152,78,97.8,212,19.1,16.2,167633,"Patient Name: Patient_55, Aadhaar: 3538-5547-6619. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10056,Patient_56,9356-7612-6005,63,107,107,96.4,228,22.4,11.2,429158,"Patient Name: Patient_56, Aadhaar: 9356-7612-6005. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10057,Patient_57,1822-1943-7150,32,133,75,96.8,70,29.6,11.7,199104,"Patient Name: Patient_57, Aadhaar: 1822-1943-7150. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",0
+P-10058,Patient_58,5425-9966-3198,42,123,62,95.3,186,32.4,13.5,218388,"Patient Name: Patient_58, Aadhaar: 5425-9966-3198. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10059,Patient_59,5242-4695-4452,34,151,79,94.0,123,26.4,16.1,166014,"Patient Name: Patient_59, Aadhaar: 5242-4695-4452. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10060,Patient_60,2308-5177-9705,26,103,83,94.8,187,26.7,12.7,242578,"Patient Name: Patient_60, Aadhaar: 2308-5177-9705. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10061,Patient_61,7852-7035-4594,55,137,92,98.0,72,20.2,13.8,314827,"Patient Name: Patient_61, Aadhaar: 7852-7035-4594. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10062,Patient_62,5841-2409-5566,65,104,83,92.1,213,25.4,11.2,190390,"Patient Name: Patient_62, Aadhaar: 5841-2409-5566. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10063,Patient_63,5491-2555-1804,77,151,70,92.9,81,26.8,11.8,435855,"Patient Name: Patient_63, Aadhaar: 5491-2555-1804. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10064,Patient_64,2279-8083-6986,80,129,108,92.4,143,22.3,16.4,241658,"Patient Name: Patient_64, Aadhaar: 2279-8083-6986. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10065,Patient_65,6619-2387-3679,19,142,67,92.3,85,22.7,16.3,207993,"Patient Name: Patient_65, Aadhaar: 6619-2387-3679. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10066,Patient_66,3106-9173-5223,28,113,95,98.8,171,24.3,11.0,355768,"Patient Name: Patient_66, Aadhaar: 3106-9173-5223. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10067,Patient_67,5831-3768-4186,81,115,97,97.6,221,18.8,16.2,308285,"Patient Name: Patient_67, Aadhaar: 5831-3768-4186. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10068,Patient_68,3573-3599-5033,38,149,99,95.7,225,23.5,14.5,396860,"Patient Name: Patient_68, Aadhaar: 3573-3599-5033. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10069,Patient_69,9428-2304-8368,35,130,79,92.8,186,21.8,15.8,419565,"Patient Name: Patient_69, Aadhaar: 9428-2304-8368. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10070,Patient_70,6877-2301-3541,81,118,94,95.9,77,23.6,13.5,368008,"Patient Name: Patient_70, Aadhaar: 6877-2301-3541. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",0
+P-10071,Patient_71,3051-7809-9633,55,104,107,95.7,191,20.4,13.8,167727,"Patient Name: Patient_71, Aadhaar: 3051-7809-9633. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10072,Patient_72,9996-1074-7981,49,134,84,93.4,161,32.3,13.7,154358,"Patient Name: Patient_72, Aadhaar: 9996-1074-7981. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10073,Patient_73,6475-9232-8184,28,154,94,95.4,233,27.7,14.7,407681,"Patient Name: Patient_73, Aadhaar: 6475-9232-8184. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10074,Patient_74,6796-8141-2622,62,98,84,95.1,159,29.0,11.8,244018,"Patient Name: Patient_74, Aadhaar: 6796-8141-2622. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",0
+P-10075,Patient_75,9041-1341-3074,50,90,88,96.9,205,30.7,11.2,444054,"Patient Name: Patient_75, Aadhaar: 9041-1341-3074. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10076,Patient_76,8992-1645-5263,58,97,77,97.0,129,26.2,12.7,276888,"Patient Name: Patient_76, Aadhaar: 8992-1645-5263. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",0
+P-10077,Patient_77,9801-7136-9646,25,152,105,92.4,97,19.8,14.9,379104,"Patient Name: Patient_77, Aadhaar: 9801-7136-9646. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10078,Patient_78,3969-4028-8643,28,100,77,95.0,170,26.8,12.1,343510,"Patient Name: Patient_78, Aadhaar: 3969-4028-8643. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10079,Patient_79,3681-4629-5225,68,97,61,96.9,110,27.6,14.7,259847,"Patient Name: Patient_79, Aadhaar: 3681-4629-5225. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",0
+P-10080,Patient_80,4067-6941-2386,58,124,94,96.0,224,30.1,16.3,446037,"Patient Name: Patient_80, Aadhaar: 4067-6941-2386. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10081,Patient_81,3866-5788-6490,34,124,75,98.8,214,25.2,11.5,226329,"Patient Name: Patient_81, Aadhaar: 3866-5788-6490. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10082,Patient_82,5124-9340-4850,63,122,100,97.2,230,20.5,14.7,181007,"Patient Name: Patient_82, Aadhaar: 5124-9340-4850. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10083,Patient_83,6415-8679-7819,49,94,95,93.3,226,22.9,13.4,320604,"Patient Name: Patient_83, Aadhaar: 6415-8679-7819. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10084,Patient_84,9378-2333-5150,71,130,92,92.6,210,24.1,15.8,162323,"Patient Name: Patient_84, Aadhaar: 9378-2333-5150. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10085,Patient_85,7766-3711-5853,37,117,63,97.1,115,28.5,12.0,262356,"Patient Name: Patient_85, Aadhaar: 7766-3711-5853. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",0
+P-10086,Patient_86,7212-8479-6408,50,96,92,92.2,104,27.3,14.8,260944,"Patient Name: Patient_86, Aadhaar: 7212-8479-6408. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10087,Patient_87,8715-9942-2762,57,101,73,96.6,203,24.0,15.6,354451,"Patient Name: Patient_87, Aadhaar: 8715-9942-2762. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10088,Patient_88,8101-8674-7122,49,123,80,99.4,151,33.8,16.2,428600,"Patient Name: Patient_88, Aadhaar: 8101-8674-7122. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10089,Patient_89,1481-1153-8617,19,122,107,96.5,184,27.9,14.8,181367,"Patient Name: Patient_89, Aadhaar: 1481-1153-8617. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10090,Patient_90,2524-3120-3343,50,137,79,95.1,116,22.2,13.7,204624,"Patient Name: Patient_90, Aadhaar: 2524-3120-3343. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10091,Patient_91,6136-6760-2240,47,112,67,97.1,222,20.1,14.4,384565,"Patient Name: Patient_91, Aadhaar: 6136-6760-2240. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10092,Patient_92,1060-2639-7185,50,151,66,95.6,79,20.9,15.8,218008,"Patient Name: Patient_92, Aadhaar: 1060-2639-7185. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10093,Patient_93,8970-2252-5203,43,126,62,96.3,125,22.3,14.1,266492,"Patient Name: Patient_93, Aadhaar: 8970-2252-5203. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",0
+P-10094,Patient_94,9363-4549-5197,39,133,76,99.4,99,21.0,11.2,222240,"Patient Name: Patient_94, Aadhaar: 9363-4549-5197. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",0
+P-10095,Patient_95,8009-7667-3322,83,124,92,95.1,178,21.4,16.1,351659,"Patient Name: Patient_95, Aadhaar: 8009-7667-3322. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10096,Patient_96,5090-7960-4004,55,154,107,99.6,74,22.9,14.8,422900,"Patient Name: Patient_96, Aadhaar: 5090-7960-4004. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10097,Patient_97,6136-1329-4640,63,136,71,99.2,188,21.2,14.7,448522,"Patient Name: Patient_97, Aadhaar: 6136-1329-4640. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10098,Patient_98,8982-5107-2341,32,92,81,93.5,102,32.4,12.2,285327,"Patient Name: Patient_98, Aadhaar: 8982-5107-2341. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10099,Patient_99,9407-1338-6895,61,90,81,92.5,187,19.7,14.6,275703,"Patient Name: Patient_99, Aadhaar: 9407-1338-6895. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10100,Patient_100,3708-2750-6604,66,94,105,92.8,134,26.6,13.2,315575,"Patient Name: Patient_100, Aadhaar: 3708-2750-6604. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10101,Patient_101,3421-8119-9901,78,103,89,92.1,215,24.9,14.6,224069,"Patient Name: Patient_101, Aadhaar: 3421-8119-9901. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10102,Patient_102,6319-7609-6387,84,116,97,92.7,80,33.7,11.6,379189,"Patient Name: Patient_102, Aadhaar: 6319-7609-6387. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10103,Patient_103,4993-9680-9044,23,98,97,97.4,154,20.2,14.6,401051,"Patient Name: Patient_103, Aadhaar: 4993-9680-9044. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",0
+P-10104,Patient_104,9238-5873-5806,26,104,104,92.6,95,24.7,16.5,275541,"Patient Name: Patient_104, Aadhaar: 9238-5873-5806. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10105,Patient_105,9592-6913-8124,23,131,67,94.5,132,33.5,11.3,339648,"Patient Name: Patient_105, Aadhaar: 9592-6913-8124. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10106,Patient_106,4157-1390-5430,49,140,86,98.7,155,31.9,16.4,406353,"Patient Name: Patient_106, Aadhaar: 4157-1390-5430. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10107,Patient_107,9820-8686-5232,58,152,86,92.2,128,31.2,13.2,421830,"Patient Name: Patient_107, Aadhaar: 9820-8686-5232. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10108,Patient_108,9007-2521-2500,25,141,93,98.4,96,22.5,15.8,281733,"Patient Name: Patient_108, Aadhaar: 9007-2521-2500. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10109,Patient_109,7737-4294-6085,67,93,80,94.2,230,21.1,15.3,325915,"Patient Name: Patient_109, Aadhaar: 7737-4294-6085. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10110,Patient_110,3419-4042-5497,79,112,89,92.9,167,28.9,14.1,245673,"Patient Name: Patient_110, Aadhaar: 3419-4042-5497. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10111,Patient_111,2466-4561-1614,79,104,92,97.5,174,32.9,15.1,192828,"Patient Name: Patient_111, Aadhaar: 2466-4561-1614. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10112,Patient_112,6392-8693-4223,24,132,87,97.0,168,27.1,15.8,422670,"Patient Name: Patient_112, Aadhaar: 6392-8693-4223. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10113,Patient_113,8138-3667-8980,21,118,106,98.9,198,27.4,13.2,175592,"Patient Name: Patient_113, Aadhaar: 8138-3667-8980. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10114,Patient_114,1130-3983-5278,23,125,92,97.8,218,22.8,12.8,441126,"Patient Name: Patient_114, Aadhaar: 1130-3983-5278. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10115,Patient_115,8126-9230-8694,75,102,64,98.3,124,30.4,14.7,412351,"Patient Name: Patient_115, Aadhaar: 8126-9230-8694. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10116,Patient_116,7640-6468-1920,39,121,107,94.2,75,21.4,15.4,382041,"Patient Name: Patient_116, Aadhaar: 7640-6468-1920. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10117,Patient_117,8564-9684-9502,43,148,78,93.4,164,23.5,15.2,380008,"Patient Name: Patient_117, Aadhaar: 8564-9684-9502. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10118,Patient_118,9930-4241-1545,20,117,63,97.9,202,25.1,15.4,274982,"Patient Name: Patient_118, Aadhaar: 9930-4241-1545. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10119,Patient_119,5346-4810-8206,58,155,94,98.4,171,26.4,13.4,406911,"Patient Name: Patient_119, Aadhaar: 5346-4810-8206. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10120,Patient_120,3032-9436-1271,77,131,108,99.8,72,22.3,15.5,218619,"Patient Name: Patient_120, Aadhaar: 3032-9436-1271. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",0
+P-10121,Patient_121,4511-2771-5361,31,134,76,95.3,92,20.3,11.7,310400,"Patient Name: Patient_121, Aadhaar: 4511-2771-5361. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",0
+P-10122,Patient_122,8069-1920-9190,29,151,103,94.9,122,28.0,14.0,301175,"Patient Name: Patient_122, Aadhaar: 8069-1920-9190. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10123,Patient_123,4430-5435-4760,29,146,87,98.1,234,23.0,11.0,320963,"Patient Name: Patient_123, Aadhaar: 4430-5435-4760. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10124,Patient_124,3050-2165-9567,30,95,89,94.7,152,27.5,12.8,291826,"Patient Name: Patient_124, Aadhaar: 3050-2165-9567. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10125,Patient_125,3033-7467-1145,42,117,88,99.4,214,20.9,13.0,381055,"Patient Name: Patient_125, Aadhaar: 3033-7467-1145. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10126,Patient_126,5388-8832-9623,62,117,105,98.8,154,26.0,13.2,248540,"Patient Name: Patient_126, Aadhaar: 5388-8832-9623. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",0
+P-10127,Patient_127,9896-9173-3632,36,133,65,95.4,147,26.8,14.8,252747,"Patient Name: Patient_127, Aadhaar: 9896-9173-3632. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",0
+P-10128,Patient_128,5494-9056-8511,72,119,94,97.9,179,19.3,13.1,336994,"Patient Name: Patient_128, Aadhaar: 5494-9056-8511. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10129,Patient_129,2828-5805-1806,62,151,100,98.0,70,23.7,13.5,179301,"Patient Name: Patient_129, Aadhaar: 2828-5805-1806. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10130,Patient_130,8486-9202-2868,25,151,96,92.8,120,20.6,12.3,372724,"Patient Name: Patient_130, Aadhaar: 8486-9202-2868. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10131,Patient_131,8878-6690-8827,70,90,83,99.1,73,19.5,13.1,343783,"Patient Name: Patient_131, Aadhaar: 8878-6690-8827. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",0
+P-10132,Patient_132,6429-4564-2389,72,116,88,96.0,182,33.8,12.2,322395,"Patient Name: Patient_132, Aadhaar: 6429-4564-2389. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10133,Patient_133,8274-1824-3265,49,151,108,98.5,101,23.5,11.4,168752,"Patient Name: Patient_133, Aadhaar: 8274-1824-3265. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10134,Patient_134,1936-7402-4845,68,92,105,94.5,103,31.1,14.3,363277,"Patient Name: Patient_134, Aadhaar: 1936-7402-4845. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10135,Patient_135,2796-9245-8214,61,159,90,99.1,161,22.4,14.7,294467,"Patient Name: Patient_135, Aadhaar: 2796-9245-8214. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10136,Patient_136,1726-3736-2913,35,116,94,95.1,164,29.1,14.4,367029,"Patient Name: Patient_136, Aadhaar: 1726-3736-2913. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10137,Patient_137,8657-3466-8312,39,98,92,92.1,141,30.3,13.5,206273,"Patient Name: Patient_137, Aadhaar: 8657-3466-8312. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10138,Patient_138,9194-8906-5876,54,151,80,99.2,108,27.7,13.1,408503,"Patient Name: Patient_138, Aadhaar: 9194-8906-5876. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10139,Patient_139,8287-1892-5675,73,126,91,92.7,223,25.8,15.7,241878,"Patient Name: Patient_139, Aadhaar: 8287-1892-5675. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10140,Patient_140,2933-2380-2290,76,140,82,94.5,231,24.9,13.9,417039,"Patient Name: Patient_140, Aadhaar: 2933-2380-2290. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10141,Patient_141,2640-8490-2218,20,133,92,99.5,187,23.9,13.6,269968,"Patient Name: Patient_141, Aadhaar: 2640-8490-2218. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10142,Patient_142,6016-7881-1954,45,113,62,99.5,72,32.9,11.1,226559,"Patient Name: Patient_142, Aadhaar: 6016-7881-1954. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10143,Patient_143,8291-1974-5133,52,148,77,96.5,192,31.4,12.9,160699,"Patient Name: Patient_143, Aadhaar: 8291-1974-5133. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10144,Patient_144,6370-4972-6295,78,121,84,97.0,119,33.5,13.1,346133,"Patient Name: Patient_144, Aadhaar: 6370-4972-6295. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10145,Patient_145,9228-4020-9987,71,141,101,95.5,81,20.4,13.2,159715,"Patient Name: Patient_145, Aadhaar: 9228-4020-9987. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10146,Patient_146,5036-6068-6233,80,151,90,94.3,123,29.8,14.2,169169,"Patient Name: Patient_146, Aadhaar: 5036-6068-6233. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10147,Patient_147,1317-3396-3162,24,147,62,94.6,202,33.0,13.9,268413,"Patient Name: Patient_147, Aadhaar: 1317-3396-3162. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10148,Patient_148,3745-2591-7183,66,141,99,97.3,126,21.3,14.3,269264,"Patient Name: Patient_148, Aadhaar: 3745-2591-7183. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10149,Patient_149,4930-2312-5311,48,101,105,97.9,214,19.5,15.2,417926,"Patient Name: Patient_149, Aadhaar: 4930-2312-5311. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10150,Patient_150,8314-3383-4239,75,128,83,98.3,181,30.0,15.5,369249,"Patient Name: Patient_150, Aadhaar: 8314-3383-4239. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10151,Patient_151,3139-2704-7924,78,91,109,98.2,116,27.4,14.9,274481,"Patient Name: Patient_151, Aadhaar: 3139-2704-7924. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",0
+P-10152,Patient_152,1362-3604-5286,41,92,91,92.7,220,31.5,16.3,365400,"Patient Name: Patient_152, Aadhaar: 1362-3604-5286. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10153,Patient_153,4738-3469-5795,37,145,106,95.9,154,20.7,11.1,185585,"Patient Name: Patient_153, Aadhaar: 4738-3469-5795. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10154,Patient_154,7150-1556-3808,54,148,81,92.5,211,30.8,12.1,442826,"Patient Name: Patient_154, Aadhaar: 7150-1556-3808. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10155,Patient_155,6150-8561-3719,21,91,82,96.3,135,21.6,11.0,328936,"Patient Name: Patient_155, Aadhaar: 6150-8561-3719. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",0
+P-10156,Patient_156,7506-4741-4998,37,91,61,95.5,144,21.0,14.6,188067,"Patient Name: Patient_156, Aadhaar: 7506-4741-4998. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",0
+P-10157,Patient_157,3403-9780-1294,77,143,86,99.0,172,21.0,15.9,323757,"Patient Name: Patient_157, Aadhaar: 3403-9780-1294. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10158,Patient_158,6343-2136-3064,41,90,101,94.8,235,31.1,12.3,403334,"Patient Name: Patient_158, Aadhaar: 6343-2136-3064. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10159,Patient_159,8009-5543-2007,67,108,61,92.9,107,28.8,16.1,168073,"Patient Name: Patient_159, Aadhaar: 8009-5543-2007. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10160,Patient_160,6445-6352-2435,66,91,85,93.1,119,26.6,11.3,186035,"Patient Name: Patient_160, Aadhaar: 6445-6352-2435. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",1
+P-10161,Patient_161,1571-3382-6084,68,142,76,98.0,167,24.1,16.1,346049,"Patient Name: Patient_161, Aadhaar: 1571-3382-6084. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10162,Patient_162,1277-8059-2887,53,133,99,96.9,151,32.1,12.9,383782,"Patient Name: Patient_162, Aadhaar: 1277-8059-2887. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10163,Patient_163,2265-8491-2040,83,121,92,92.8,99,24.6,11.6,240373,"Patient Name: Patient_163, Aadhaar: 2265-8491-2040. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10164,Patient_164,9073-3752-9213,51,159,68,92.7,148,31.2,13.7,240517,"Patient Name: Patient_164, Aadhaar: 9073-3752-9213. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1
+P-10165,Patient_165,5569-7353-3353,53,121,102,97.5,160,25.3,12.4,215450,"Patient Name: Patient_165, Aadhaar: 5569-7353-3353. Complaining of acute chest pain and dyspnea. Dr. Sharma attending.",0
+P-10166,Patient_166,8437-5799-1686,23,157,107,92.6,121,24.3,12.6,160382,"Patient Name: Patient_166, Aadhaar: 8437-5799-1686. Routine health checkup. Vitals within normal limits. Dr. Gupta attending.",1
+P-10167,Patient_167,9476-5811-9954,56,144,98,98.5,235,25.7,12.7,352043,"Patient Name: Patient_167, Aadhaar: 9476-5811-9954. Admitted with elevated blood pressure and severe fatigue. Dr. Patel attending.",1
+P-10168,Patient_168,6346-6043-3428,59,145,88,97.6,148,23.2,15.4,371427,"Patient Name: Patient_168, Aadhaar: 6346-6043-3428. Follow-up consultation for type-2 diabetes management. Dr. Rao attending.",1
+P-10169,Patient_169,6126-9220-8813,75,106,101,92.6,99,30.1,14.0,211929,"Patient Name: Patient_169, Aadhaar: 6126-9220-8813. Mild fever and body ache observed. Prescribed antipyretics. Dr. Singh attending.",1

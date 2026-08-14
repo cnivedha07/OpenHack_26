@@ -1,25 +1,121 @@
 version: '3.8'
 
 services:
+  db:
+    image: postgres:15-alpine
+    container_name: trustfed_postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: trustfed
+      POSTGRES_PASSWORD: trustfed123
+      POSTGRES_DB: trustfed_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U trustfed -d trustfed_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: always
+
   backend:
     build:
       context: .
       dockerfile: Dockerfile.backend
+    container_name: trustfed_backend
     ports:
       - "8000:8000"
+      - "8080:8080" # Flower gRPC port
     environment:
       - PORT=8000
+      - DATABASE_URL=postgresql://trustfed:trustfed123@db:5432/trustfed_db
+      - JWT_SECRET_KEY=trustfed_production_jwt_secret_key_2026
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "python -c 'import socket; s = socket.socket(); s.connect((\"127.0.0.1\", 8000))' || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
     restart: always
 
   frontend:
     build:
       context: .
       dockerfile: Dockerfile.frontend
+    container_name: trustfed_frontend
     ports:
       - "3000:3000"
     environment:
       - NEXT_PUBLIC_API_URL=http://localhost:8000
       - NEXT_PUBLIC_WS_URL=ws://localhost:8000/ws
     depends_on:
-      - backend
+      backend:
+        condition: service_healthy
     restart: always
+
+  hospital_1_node:
+    build:
+      context: .
+      dockerfile: Dockerfile.hospital-client
+    container_name: trustfed-hospital-1
+    environment:
+      - HOSPITAL_ID=hospital_1
+      - SERVER_ADDRESS=backend:8080
+      - FL_TLS_ENABLED=false
+      - DATA_DIR=/app/synthetic_data
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: on-failure
+
+  hospital_2_node:
+    build:
+      context: .
+      dockerfile: Dockerfile.hospital-client
+    container_name: trustfed-hospital-2
+    environment:
+      - HOSPITAL_ID=hospital_2
+      - SERVER_ADDRESS=backend:8080
+      - FL_TLS_ENABLED=false
+      - DATA_DIR=/app/synthetic_data
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: on-failure
+
+  hospital_3_node:
+    build:
+      context: .
+      dockerfile: Dockerfile.hospital-client
+    container_name: trustfed-hospital-3
+    environment:
+      - HOSPITAL_ID=hospital_3
+      - SERVER_ADDRESS=backend:8080
+      - FL_TLS_ENABLED=false
+      - DATA_DIR=/app/synthetic_data
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: on-failure
+
+  hospital_4_node:
+    build:
+      context: .
+      dockerfile: Dockerfile.hospital-client
+    container_name: trustfed-hospital-4
+    environment:
+      - HOSPITAL_ID=hospital_4
+      - SERVER_ADDRESS=backend:8080
+      - FL_TLS_ENABLED=false
+      - DATA_DIR=/app/synthetic_data
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: on-failure
+
+volumes:
+  postgres_data:
+    driver: local

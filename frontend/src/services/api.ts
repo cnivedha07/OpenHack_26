@@ -2,10 +2,39 @@ import { DashboardSummary } from "@/types";
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
 
+export function getAuthToken(): string | null {
+  if (typeof window === "undefined") return null;
+  return localStorage.getItem("trustfed_jwt_token");
+}
+
+export function getAuthUser(): { username: string; role: string; hospital_id: string | null } | null {
+  if (typeof window === "undefined") return null;
+  const userStr = localStorage.getItem("trustfed_user");
+  if (!userStr) return null;
+  try {
+    return JSON.parse(userStr);
+  } catch {
+    return null;
+  }
+}
+
+export function logout() {
+  if (typeof window !== "undefined") {
+    localStorage.removeItem("trustfed_jwt_token");
+    localStorage.removeItem("trustfed_user");
+    window.location.href = "/login";
+  }
+}
+
 async function apiFetch<T = any>(endpoint: string, options?: RequestInit): Promise<T> {
   const headers: Record<string, string> = {};
   if (options?.body && !(options.body instanceof FormData)) {
     headers["Content-Type"] = "application/json";
+  }
+
+  const token = getAuthToken();
+  if (token) {
+    headers["Authorization"] = `Bearer ${token}`;
   }
 
   const doFetch = async (baseUrl: string) => {
@@ -34,6 +63,7 @@ async function apiFetch<T = any>(endpoint: string, options?: RequestInit): Promi
 
     return await res.json();
   };
+
 
   try {
     return await doFetch(API_BASE_URL);
@@ -110,4 +140,37 @@ export async function anonymizeSampleText(text: string) {
     body: JSON.stringify({ text }),
   });
 }
+
+export async function loginAdmin(username: string, password: string) {
+  const data = await apiFetch("/auth/admin/login", {
+    method: "POST",
+    body: JSON.stringify({ username, password }),
+  });
+  if (typeof window !== "undefined" && data.access_token) {
+    localStorage.setItem("trustfed_jwt_token", data.access_token);
+    localStorage.setItem("trustfed_user", JSON.stringify({
+      username: data.username,
+      role: data.role,
+      hospital_id: data.hospital_id,
+    }));
+  }
+  return data;
+}
+
+export async function loginHospital(username: string, password: string) {
+  const data = await apiFetch("/auth/hospital/login", {
+    method: "POST",
+    body: JSON.stringify({ username, password }),
+  });
+  if (typeof window !== "undefined" && data.access_token) {
+    localStorage.setItem("trustfed_jwt_token", data.access_token);
+    localStorage.setItem("trustfed_user", JSON.stringify({
+      username: data.username,
+      role: data.role,
+      hospital_id: data.hospital_id,
+    }));
+  }
+  return data;
+}
+
 

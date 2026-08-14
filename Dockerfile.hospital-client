@@ -1,0 +1,22 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements and install dependencies
+COPY backend/requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy backend codebase and synthetic data
+COPY backend /app/backend
+COPY backend/synthetic_data /app/synthetic_data
+
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONPATH=/app/backend
+
+# Default entrypoint runs standalone hospital client node
+CMD ["python", "/app/backend/federated/client/run_hospital_node.py"]

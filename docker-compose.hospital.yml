@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  hospital_1_node:
+    build:
+      context: .
+      dockerfile: Dockerfile.hospital-client
+    container_name: trustfed-hospital-1
+    environment:
+      - HOSPITAL_ID=hospital_1
+      - SERVER_ADDRESS=trustfed-server:8080
+      - FL_TLS_ENABLED=false
+      - DATA_DIR=/app/synthetic_data
+    restart: on-failure
+
+  hospital_2_node:
+    build:
+      context: .
+      dockerfile: Dockerfile.hospital-client
+    container_name: trustfed-hospital-2
+    environment:
+      - HOSPITAL_ID=hospital_2
+      - SERVER_ADDRESS=trustfed-server:8080
+      - FL_TLS_ENABLED=false
+      - DATA_DIR=/app/synthetic_data
+    restart: on-failure
+
+  hospital_3_node:
+    build:
+      context: .
+      dockerfile: Dockerfile.hospital-client
+    container_name: trustfed-hospital-3
+    environment:
+      - HOSPITAL_ID=hospital_3
+      - SERVER_ADDRESS=trustfed-server:8080
+      - FL_TLS_ENABLED=false
+      - DATA_DIR=/app/synthetic_data
+    restart: on-failure
+
+  hospital_4_node:
+    build:
+      context: .
+      dockerfile: Dockerfile.hospital-client
+    container_name: trustfed-hospital-4
+    environment:
+      - HOSPITAL_ID=hospital_4
+      - SERVER_ADDRESS=trustfed-server:8080
+      - FL_TLS_ENABLED=false
+      - DATA_DIR=/app/synthetic_data
+    restart: on-failure
