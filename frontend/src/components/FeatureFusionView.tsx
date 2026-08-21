@@ -23,7 +23,7 @@ export const FeatureFusionView: React.FC<FeatureFusionViewProps> = ({ stats }) =
 
       <div className="grid grid-cols-3 gap-3 mb-4">
         <div className="p-3 rounded-xl bg-slate-950 border border-slate-800 flex items-center space-x-3">
-          <div className="p-2 rounded-lg bg-blue-500/10 text-blue-400">
+          <div className="p-2 rounded-lg bg-teal-500/10 text-teal-400">
             <ImageIcon className="w-4 h-4" />
           </div>
           <div>
@@ -56,11 +56,12 @@ export const FeatureFusionView: React.FC<FeatureFusionViewProps> = ({ stats }) =
       <div className="p-3 rounded-xl bg-slate-950 border border-slate-800/80">
         <span className="text-xs text-slate-400 block mb-1">Attention Weight Fusion Distribution</span>
         <div className="h-3 w-full bg-slate-800 rounded-full overflow-hidden flex">
-          <div className="bg-blue-500 h-full" style={{ width: `${stats.cnn_usage_pct}%` }} />
+          <div className="bg-teal-500 h-full" style={{ width: `${stats.cnn_usage_pct}%` }} />
           <div className="bg-emerald-500 h-full" style={{ width: `${stats.ann_usage_pct}%` }} />
           <div className="bg-purple-500 h-full" style={{ width: `${stats.bert_usage_pct}%` }} />
         </div>
       </div>
+
     </div>
   );
 };

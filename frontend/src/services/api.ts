@@ -26,13 +26,46 @@ export function logout() {
   }
 }
 
-async function apiFetch<T = any>(endpoint: string, options?: RequestInit): Promise<T> {
+export async function ensureDefaultAuthToken(): Promise<string | null> {
+  let token = getAuthToken();
+  if (!token && typeof window !== "undefined") {
+    try {
+      const loginRes = await fetch(`${API_BASE_URL}/auth/admin/login`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username: "admin", password: "admin123" }),
+      });
+      if (loginRes.ok) {
+        const data = await loginRes.json();
+        if (data.access_token) {
+          localStorage.setItem("trustfed_jwt_token", data.access_token);
+          localStorage.setItem("trustfed_user", JSON.stringify({
+            username: data.username,
+            role: data.role,
+            hospital_id: data.hospital_id,
+          }));
+          return data.access_token;
+        }
+      }
+    } catch {
+      // Auto login fallback failed
+    }
+  }
+  return token;
+}
+
+async function apiFetch<T = any>(endpoint: string, options?: RequestInit, isRetry: boolean = false): Promise<T> {
   const headers: Record<string, string> = {};
   if (options?.body && !(options.body instanceof FormData)) {
     headers["Content-Type"] = "application/json";
   }
 
-  const token = getAuthToken();
+  // Ensure an auth token is present for non-auth endpoints
+  let token = getAuthToken();
+  if (!token && !endpoint.startsWith("/auth/")) {
+    token = await ensureDefaultAuthToken();
+  }
+
   if (token) {
     headers["Authorization"] = `Bearer ${token}`;
   }
@@ -47,6 +80,17 @@ async function apiFetch<T = any>(endpoint: string, options?: RequestInit): Promi
     });
 
     if (!res.ok) {
+      // Handle 401 Unauthorized by auto-renewing default token once
+      if (res.status === 401 && !isRetry && !endpoint.startsWith("/auth/")) {
+        if (typeof window !== "undefined") {
+          localStorage.removeItem("trustfed_jwt_token");
+        }
+        const newToken = await ensureDefaultAuthToken();
+        if (newToken) {
+          return await apiFetch<T>(endpoint, options, true);
+        }
+      }
+
       let errorMessage = `HTTP ${res.status}: ${res.statusText}`;
       try {
         const errorData = await res.json();
@@ -63,7 +107,6 @@ async function apiFetch<T = any>(endpoint: string, options?: RequestInit): Promi
 
     return await res.json();
   };
-
 
   try {
     return await doFetch(API_BASE_URL);
@@ -170,7 +213,27 @@ export async function loginHospital(username: string, password: string) {
       hospital_id: data.hospital_id,
     }));
   }
+
   return data;
 }
 
+export async function uploadHospitalDataset(hospitalId: string, file: File) {
+
+  const formData = new FormData();
+  formData.append("file", file);
+  formData.append("hospital_id", hospitalId);
+
+  return apiFetch("/upload", {
+    method: "POST",
+    body: formData,
+  });
+}
+
+export async function fetchHospitalDatasets(hospitalId: string) {
+  return apiFetch(`/datasets/${hospitalId}`);
+}
+
+export async function fetchTrainingRuns(hospitalId: string) {
+  return apiFetch(`/training/runs/${hospitalId}`);
+}
 

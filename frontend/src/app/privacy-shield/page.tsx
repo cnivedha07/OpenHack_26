@@ -49,15 +49,16 @@ export default function PrivacyShieldPage() {
               rows={14}
               value={rawText}
               onChange={(e) => setRawText(e.target.value)}
-              className="w-full p-3 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-200 font-mono focus:outline-none focus:border-blue-500"
+              className="w-full p-3 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-200 font-mono focus:outline-none focus:border-emerald-500"
             />
             <button
               onClick={runScan}
               disabled={loading}
-              className="mt-4 w-full py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow-lg shadow-blue-600/20 flex items-center justify-center gap-2"
+              className="mt-4 w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold shadow-lg shadow-emerald-600/20 flex items-center justify-center gap-2"
             >
               {loading ? "Scanning..." : "Run Privacy Shield"}
             </button>
+
           </div>
 
           <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">

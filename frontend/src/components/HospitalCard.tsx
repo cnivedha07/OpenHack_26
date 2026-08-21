@@ -30,7 +30,8 @@ export const HospitalCard: React.FC<HospitalCardProps> = ({ hospital }) => {
     >
       <div className="flex items-start justify-between mb-3">
         <div className="flex items-center space-x-3">
-          <div className="p-2.5 rounded-xl bg-slate-800 border border-slate-700 text-blue-400">
+          <div className="p-2.5 rounded-xl bg-slate-800 border border-slate-700 text-emerald-400">
+
             <Building2 className="w-5 h-5" />
           </div>
           <div>

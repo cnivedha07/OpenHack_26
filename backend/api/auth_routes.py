@@ -1,4 +1,5 @@
-from datetime import datetime
+from datetime import datetime, timezone
+
 from typing import Optional, Dict, Any
 from fastapi import APIRouter, Depends, HTTPException, status
 from pydantic import BaseModel
@@ -43,7 +44,8 @@ def admin_login(req: LoginRequest, db: Session = Depends(get_db)):
             detail="Admin account is disabled"
         )
 
-    admin.last_login = datetime.utcnow()
+    admin.last_login = datetime.now(timezone.utc)
+
     db.commit()
 
     token = create_access_token(user_id=admin.username, role="admin", hospital_id=None)
@@ -73,7 +75,8 @@ def hospital_login(req: LoginRequest, db: Session = Depends(get_db)):
             detail="Hospital account is disabled"
         )
 
-    hospital_user.last_login = datetime.utcnow()
+    hospital_user.last_login = datetime.now(timezone.utc)
+
     db.commit()
 
     token = create_access_token(
@@ -98,7 +101,8 @@ def unified_login(req: LoginRequest, db: Session = Depends(get_db)):
     # Try admin first
     admin = db.query(AdminAccountModel).filter(AdminAccountModel.username == req.username).first()
     if admin and verify_password(req.password, admin.hashed_password):
-        admin.last_login = datetime.utcnow()
+        admin.last_login = datetime.now(timezone.utc)
+
         db.commit()
         token = create_access_token(user_id=admin.username, role="admin", hospital_id=None)
         return AuthTokenResponse(
@@ -111,7 +115,8 @@ def unified_login(req: LoginRequest, db: Session = Depends(get_db)):
     # Try hospital account
     hospital_user = db.query(HospitalAccountModel).filter(HospitalAccountModel.username == req.username).first()
     if hospital_user and verify_password(req.password, hospital_user.hashed_password):
-        hospital_user.last_login = datetime.utcnow()
+        hospital_user.last_login = datetime.now(timezone.utc)
+
         db.commit()
         token = create_access_token(
             user_id=hospital_user.username,

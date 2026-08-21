@@ -17,7 +17,7 @@ export const NetworkTopology: React.FC<NetworkTopologyProps> = ({ hospitals, cur
           <h3 className="text-sm font-semibold text-white">Federated Network Topology &amp; Trust Guard</h3>
           <p className="text-xs text-slate-400">Encrypted parameter aggregation hub with real-time anomaly isolation</p>
         </div>
-        <span className="px-2.5 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-mono">
+        <span className="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-mono">
           Round #{currentRound}
         </span>
       </div>
@@ -33,22 +33,23 @@ export const NetworkTopology: React.FC<NetworkTopologyProps> = ({ hospitals, cur
 
         {/* Central Trust Aggregator Node */}
         <div className="z-10 flex flex-col items-center">
-          <div className="p-4 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-600 border border-blue-400/40 shadow-xl shadow-blue-500/20 animate-pulse">
+          <div className="p-4 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-600 border border-emerald-400/40 shadow-xl shadow-emerald-500/20 animate-pulse">
             <Server className="w-8 h-8 text-white" />
           </div>
           <span className="mt-2 text-xs font-bold text-white bg-slate-900/90 px-3 py-1 rounded-full border border-slate-700 flex items-center gap-1">
-            <ShieldCheck className="w-3.5 h-3.5 text-blue-400" />
+            <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
             Trust FedAvg Hub
           </span>
         </div>
 
         {/* Hospital 1 Node (Top-Left) */}
         <div className="absolute top-6 left-6 z-10 flex flex-col items-center">
-          <div className="p-3 rounded-xl bg-slate-900 border border-blue-500/40 text-blue-400">
+          <div className="p-3 rounded-xl bg-slate-900 border border-emerald-500/40 text-emerald-400">
             <Activity className="w-5 h-5" />
           </div>
           <span className="mt-1 text-[11px] font-medium text-slate-300">Hospital 1</span>
         </div>
+
 
         {/* Hospital 2 Node (Top-Right) */}
         <div className="absolute top-6 right-6 z-10 flex flex-col items-center">

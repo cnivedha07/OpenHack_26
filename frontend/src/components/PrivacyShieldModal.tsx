@@ -63,7 +63,8 @@ export const PrivacyShieldModal: React.FC<PrivacyShieldModalProps> = ({ isOpen, 
               rows={6}
               value={rawText}
               onChange={(e) => setRawText(e.target.value)}
-              className="w-full p-3 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-200 focus:outline-none focus:border-blue-500"
+              className="w-full p-3 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-200 focus:outline-none focus:border-emerald-500"
+
             />
           </div>
 

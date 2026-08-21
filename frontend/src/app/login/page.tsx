@@ -58,12 +58,12 @@ export default function LoginPage() {
     <div className="min-h-screen bg-[#090d16] flex items-center justify-center p-6 text-slate-100">
       <div className="w-full max-w-md bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 shadow-2xl relative overflow-hidden">
         {/* Glow Effects */}
-        <div className="absolute -top-24 -left-24 w-48 h-48 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-24 -right-24 w-48 h-48 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -top-24 -left-24 w-48 h-48 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-24 -right-24 w-48 h-48 bg-teal-600/10 rounded-full blur-3xl pointer-events-none" />
 
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-8">
-          <div className="p-3 bg-gradient-to-br from-cyan-500/20 to-blue-600/20 border border-cyan-500/30 rounded-2xl mb-4 text-cyan-400">
+          <div className="p-3 bg-gradient-to-br from-emerald-500/20 to-teal-600/20 border border-emerald-500/30 rounded-2xl mb-4 text-emerald-400">
             <Shield className="w-8 h-8" />
           </div>
           <h1 className="text-2xl font-bold tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
@@ -84,7 +84,7 @@ export default function LoginPage() {
             }}
             className={`flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg text-sm font-medium transition-all ${
               roleMode === "hospital"
-                ? "bg-cyan-500/20 text-cyan-400 border border-cyan-500/40 shadow-sm"
+                ? "bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 shadow-sm"
                 : "text-slate-400 hover:text-slate-200"
             }`}
           >
@@ -99,7 +99,7 @@ export default function LoginPage() {
             }}
             className={`flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg text-sm font-medium transition-all ${
               roleMode === "admin"
-                ? "bg-blue-500/20 text-blue-400 border border-blue-500/40 shadow-sm"
+                ? "bg-teal-500/20 text-teal-300 border border-teal-500/40 shadow-sm"
                 : "text-slate-400 hover:text-slate-200"
             }`}
           >
@@ -137,7 +137,7 @@ export default function LoginPage() {
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 placeholder={roleMode === "admin" ? "admin" : "hospital_1_user"}
-                className="w-full bg-slate-950/80 border border-slate-800 rounded-xl pl-10 pr-4 py-2.5 text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-cyan-500/60 focus:ring-1 focus:ring-cyan-500/60 transition-all"
+                className="w-full bg-slate-950/80 border border-slate-800 rounded-xl pl-10 pr-4 py-2.5 text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-emerald-500/60 focus:ring-1 focus:ring-emerald-500/60 transition-all"
               />
             </div>
           </div>
@@ -154,7 +154,7 @@ export default function LoginPage() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="••••••••"
-                className="w-full bg-slate-950/80 border border-slate-800 rounded-xl pl-10 pr-4 py-2.5 text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-cyan-500/60 focus:ring-1 focus:ring-cyan-500/60 transition-all"
+                className="w-full bg-slate-950/80 border border-slate-800 rounded-xl pl-10 pr-4 py-2.5 text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-emerald-500/60 focus:ring-1 focus:ring-emerald-500/60 transition-all"
               />
             </div>
           </div>
@@ -162,7 +162,7 @@ export default function LoginPage() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold text-sm shadow-lg shadow-cyan-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+            className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-semibold text-sm shadow-lg shadow-emerald-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
           >
             {loading ? "Authenticating..." : roleMode === "admin" ? "Sign In to Admin Portal" : "Sign In to Hospital Workspace"}
           </button>
@@ -189,12 +189,13 @@ export default function LoginPage() {
             <button
               type="button"
               onClick={() => handleQuickFill("admin")}
-              className="px-3 py-1.5 bg-blue-500/20 hover:bg-blue-500/30 border border-blue-500/30 rounded-lg text-xs text-blue-300 transition-colors font-medium"
+              className="px-3 py-1.5 bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-500/30 rounded-lg text-xs text-emerald-300 transition-colors font-medium"
             >
               Admin
             </button>
           </div>
         </div>
+
       </div>
     </div>
   );

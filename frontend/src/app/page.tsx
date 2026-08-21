@@ -63,14 +63,14 @@ export default function DashboardPage() {
             <p className="text-xs text-rose-300/80">{error}</p>
             <button
               onClick={() => { setLoading(true); loadData(); }}
-              className="px-4 py-2 text-xs font-semibold rounded-xl bg-blue-600 hover:bg-blue-500 text-white"
+              className="px-4 py-2 text-xs font-semibold rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white shadow-md shadow-emerald-600/20"
             >
               Retry Connection
             </button>
           </div>
         ) : (
           <div className="flex flex-col items-center space-y-3">
-            <div className="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin" />
+            <div className="w-8 h-8 border-4 border-emerald-500 border-t-transparent rounded-full animate-spin" />
             <span>Initializing TrustFed Engine...</span>
           </div>
         )}
@@ -101,9 +101,9 @@ export default function DashboardPage() {
         </div>
 
         <section className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <StatCard icon={Gauge} label="Global Accuracy" value={`${(data.global_accuracy * 100).toFixed(1)}%`} color="text-blue-400" />
+          <StatCard icon={Gauge} label="Global Accuracy" value={`${(data.global_accuracy * 100).toFixed(1)}%`} color="text-emerald-400" />
           <StatCard icon={TrendingDown} label="Global Loss" value={data.global_loss.toFixed(4)} sub="cross-entropy" color="text-amber-400" />
-          <StatCard icon={Target} label="F1 Score (approx.)" value={f1Approx} color="text-emerald-400" />
+          <StatCard icon={Target} label="F1 Score (approx.)" value={f1Approx} color="text-teal-400" />
           <StatCard icon={ShieldCheck} label="Global Trust" value={`${(data.global_trust ?? 0).toFixed(1)}%`} color="text-indigo-400" />
         </section>
 
@@ -113,9 +113,10 @@ export default function DashboardPage() {
             <span className="text-slate-400">Round {data.current_round}/{data.total_rounds}</span>
           </div>
           <div className="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
-            <div className="h-full bg-blue-500 transition-all" style={{ width: `${progressPct}%` }} />
+            <div className="h-full bg-gradient-to-r from-emerald-500 to-teal-500 transition-all" style={{ width: `${progressPct}%` }} />
           </div>
         </section>
+
 
         <section className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <StatCard icon={Users} label="Active Nodes" value={data.hospitals.filter(h => h.status === "Active").length} color="text-slate-100" />

@@ -4,7 +4,11 @@ from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
 from database.database import get_db
-from database.models import PrivacyAuditModel, AttackLogModel, RoundLogModel, GlobalModelVersionModel
+from database.models import (
+    PrivacyAuditModel, AttackLogModel, RoundLogModel, GlobalModelVersionModel,
+    DatasetModel, TrainingRunModel, ModelVersionModel
+)
+
 from privacy.privacy_shield import PrivacyShieldEngine
 from validation.validator import DataValidationEngine
 from classifier.data_classifier import IntelligentDataClassifier
@@ -67,9 +71,10 @@ async def upload_file(
     # Enforce 10MB upload size limit (HTTP 413 Payload Too Large)
     if len(content) > MAX_UPLOAD_SIZE:
         raise HTTPException(
-            status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE,
+            status_code=413,
             detail=f"File size ({len(content)} bytes) exceeds the maximum allowed limit of 10MB (Payload Too Large)."
         )
+
 
     # Step 1: Privacy Shield (processed strictly in-memory via BytesIO / bytes buffer)
     privacy_res = privacy_engine.process_file_privacy(file.filename, file.content_type, content)
@@ -93,18 +98,47 @@ async def upload_file(
         redacted_sample=snippet[:200] if snippet else ""
     )
     db.add(audit_entry)
-    db.commit()
 
-    log_event(f"[Privacy Shield] Processed '{file.filename}' for {hospital_id}. Redacted {len(detected_entities)} PII tokens.")
+    # Calculate row count estimate
+    row_count = 1
+    if content:
+        lines = content.decode("utf-8", errors="ignore").splitlines()
+        row_count = max(1, len(lines) - 1)
+
+    # Save Dataset record in Database
+    dataset_entry = DatasetModel(
+        hospital_id=hospital_id,
+        filename=file.filename,
+        row_count=row_count,
+        columns_json=validation_res.get("columns", []),
+        data_type=classification_res.get("data_type", "Tabular"),
+        status="Validated",
+        pii_detected_count=len(detected_entities)
+    )
+    db.add(dataset_entry)
+    db.commit()
+    db.refresh(dataset_entry)
+
+    log_event(f"[Privacy Shield & DB] Persisted dataset #{dataset_entry.id} ('{file.filename}') for {hospital_id}. Redacted {len(detected_entities)} PII tokens.")
+
+    # Trigger Automated Local Training Round for this hospital
+    training_res = fl_server.execute_hospital_local_training(
+        hospital_id=hospital_id,
+        dataset_id=dataset_entry.id,
+        db=db
+    )
 
     return {
         "hospital_id": hospital_id,
+        "dataset_id": dataset_entry.id,
         "filename": file.filename,
         "privacy_shield": privacy_res,
         "validation_report": validation_res,
         "classification": classification_res,
-        "status": "Processed and Routed to FL Pipeline"
+        "training_run": training_res,
+        "status": "Processed, Saved to DB & Local Training Round Complete"
     }
+
 
 
 @router.post("/privacy/anonymize")
@@ -396,3 +430,85 @@ async def toggle_attack(
         })
         return {"message": f"Attack '{req.attack_type}' applied to {req.hospital_id}"}
     raise HTTPException(status_code=404, detail="Hospital not found")
+
+
+@router.get("/datasets/{hospital_id}")
+async def get_hospital_datasets(
+    hospital_id: str,
+    db: Session = Depends(get_db),
+    user: Dict[str, Any] = Depends(get_current_user)
+):
+    """
+    Returns stored dataset records for a hospital.
+    """
+    if user.get("role") == "hospital" and user.get("hospital_id") != hospital_id:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail=f"Access denied: Hospital '{user.get('hospital_id')}' cannot view datasets for '{hospital_id}'"
+        )
+
+    query = db.query(DatasetModel)
+    if hospital_id != "all":
+        query = query.filter(DatasetModel.hospital_id == hospital_id)
+    
+    datasets = query.order_by(DatasetModel.uploaded_at.desc()).all()
+    return {
+        "hospital_id": hospital_id,
+        "datasets": [
+            {
+                "id": d.id,
+                "hospital_id": d.hospital_id,
+                "filename": d.filename,
+                "row_count": d.row_count,
+                "data_type": d.data_type,
+                "status": d.status,
+                "pii_detected_count": d.pii_detected_count,
+                "uploaded_at": d.uploaded_at.isoformat() if d.uploaded_at else None
+            }
+            for d in datasets
+        ]
+    }
+
+
+@router.get("/training/runs/{hospital_id}")
+async def get_hospital_training_runs(
+    hospital_id: str,
+    db: Session = Depends(get_db),
+    user: Dict[str, Any] = Depends(get_current_user)
+):
+    """
+    Returns training run history for a hospital node.
+    """
+    if user.get("role") == "hospital" and user.get("hospital_id") != hospital_id:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail=f"Access denied: Hospital '{user.get('hospital_id')}' cannot view training runs for '{hospital_id}'"
+        )
+
+    query = db.query(TrainingRunModel)
+    if hospital_id != "all":
+        query = query.filter(TrainingRunModel.hospital_id == hospital_id)
+
+    runs = query.order_by(TrainingRunModel.started_at.desc()).all()
+    return {
+        "hospital_id": hospital_id,
+        "runs": [
+            {
+                "id": r.id,
+                "hospital_id": r.hospital_id,
+                "round_number": r.round_number,
+                "status": r.status,
+                "loss": r.loss,
+                "accuracy": r.accuracy,
+                "precision": r.precision,
+                "recall": r.recall,
+                "f1_score": r.f1_score,
+                "minority_recall": r.minority_recall,
+                "logs_text": r.logs_text,
+                "started_at": r.started_at.isoformat() if r.started_at else None,
+                "completed_at": r.completed_at.isoformat() if r.completed_at else None
+            }
+            for r in runs
+        ]
+    }
+

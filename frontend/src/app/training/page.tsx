@@ -9,7 +9,9 @@ import {
   ShieldCheck,
   AlertTriangle,
 } from "lucide-react";
+import { HospitalDatasetUploadManager } from "@/components/HospitalDatasetUploadManager";
 import { DashboardSummary } from "@/types";
+
 import {
   fetchDashboardMetrics,
   startFederatedRound,
@@ -85,7 +87,7 @@ export default function TrainingControlPage() {
           </div>
         ) : (
           <div className="flex items-center space-x-2">
-            <div className="w-5 h-5 border-2 border-blue-500 border-t-transparent rounded-full animate-spin" />
+            <div className="w-5 h-5 border-2 border-emerald-500 border-t-transparent rounded-full animate-spin" />
             <span>Loading Training Control System...</span>
           </div>
         )}
@@ -124,7 +126,7 @@ export default function TrainingControlPage() {
           <button
             disabled={busy}
             onClick={() => run(startFederatedRound)}
-            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold"
+            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold shadow-md shadow-emerald-600/20"
           >
             <Play className="w-3.5 h-3.5" /> Start Round
           </button>
@@ -138,7 +140,7 @@ export default function TrainingControlPage() {
           <button
             disabled={busy}
             onClick={() => run(resumeFederatedRound)}
-            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold"
+            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-semibold"
           >
             <Play className="w-3.5 h-3.5" /> Resume
           </button>
@@ -160,7 +162,8 @@ export default function TrainingControlPage() {
 
         <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-4 flex items-center justify-between">
           <div className="flex items-start gap-3">
-            <ShieldCheck className="w-5 h-5 text-blue-400 mt-0.5" />
+            <ShieldCheck className="w-5 h-5 text-emerald-400 mt-0.5" />
+
             <div>
               <p className="text-sm font-semibold text-white flex items-center gap-2">
                 Differential Privacy
@@ -183,7 +186,12 @@ export default function TrainingControlPage() {
           </button>
         </div>
 
+        {/* Dataset Upload & Local Training Flow */}
+        <HospitalDatasetUploadManager onTrainingTriggered={refresh} />
+
+
         <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+
           <p className="text-[11px] uppercase tracking-wide text-slate-500 mb-4">Privacy-Preserving Training Pipeline</p>
           <div className="flex flex-wrap items-center gap-2">
             {PIPELINE.map((step, i) => (

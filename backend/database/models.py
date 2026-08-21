@@ -1,8 +1,12 @@
+from datetime import datetime, timezone
 from sqlalchemy import Column, Integer, String, Float, Boolean, DateTime, Text, ForeignKey, JSON
 from sqlalchemy.orm import declarative_base
-from datetime import datetime
 
 Base = declarative_base()
+
+def get_utc_now():
+    return datetime.now(timezone.utc)
+
 
 class HospitalModel(Base):
     __tablename__ = "hospitals"
@@ -14,8 +18,58 @@ class HospitalModel(Base):
     samples_count = Column(Integer, default=0)
     privacy_shield_active = Column(Boolean, default=True)
     validation_status = Column(String, default="Passed")
-    joined_at = Column(DateTime, default=datetime.utcnow)
-    last_active = Column(DateTime, default=datetime.utcnow)
+    joined_at = Column(DateTime, default=get_utc_now)
+    last_active = Column(DateTime, default=get_utc_now)
+
+
+class DatasetModel(Base):
+    __tablename__ = "datasets"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    hospital_id = Column(String, ForeignKey("hospitals.id"), nullable=False)
+    filename = Column(String, nullable=False)
+    file_path = Column(String, nullable=True)
+    row_count = Column(Integer, default=0)
+    columns_json = Column(JSON, nullable=True)
+    data_type = Column(String, default="Tabular")
+    status = Column(String, default="Validated") # Validated, Anonymized, Processing, Failed
+    pii_detected_count = Column(Integer, default=0)
+    uploaded_at = Column(DateTime, default=get_utc_now)
+
+
+class TrainingRunModel(Base):
+    __tablename__ = "training_runs"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    hospital_id = Column(String, ForeignKey("hospitals.id"), nullable=False)
+    round_number = Column(Integer, nullable=False, default=1)
+    status = Column(String, default="queued") # queued, running, done, failed
+    loss = Column(Float, nullable=True)
+    accuracy = Column(Float, nullable=True)
+    precision = Column(Float, nullable=True)
+    recall = Column(Float, nullable=True)
+
+    f1_score = Column(Float, nullable=True)
+    minority_recall = Column(Float, nullable=True)
+    logs_text = Column(Text, nullable=True)
+    weights_summary = Column(JSON, nullable=True)
+    started_at = Column(DateTime, default=get_utc_now)
+    completed_at = Column(DateTime, nullable=True)
+
+
+class ModelVersionModel(Base):
+    __tablename__ = "model_versions"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    version = Column(String, nullable=False)
+    round_number = Column(Integer, nullable=False)
+    hospital_id = Column(String, nullable=True) # None for global model, or hospital ID
+    global_accuracy = Column(Float, nullable=False)
+    global_loss = Column(Float, nullable=False)
+    participating_hospitals = Column(JSON, nullable=True)
+    metrics_json = Column(JSON, nullable=True)
+    weights_path = Column(String, nullable=True)
+    timestamp = Column(DateTime, default=get_utc_now)
 
 
 class RoundLogModel(Base):
@@ -34,7 +88,7 @@ class RoundLogModel(Base):
     local_accuracy = Column(Float)
     is_suspicious = Column(Boolean, default=False)
     status_note = Column(String)
-    timestamp = Column(DateTime, default=datetime.utcnow)
+    timestamp = Column(DateTime, default=get_utc_now)
 
 
 class GlobalModelVersionModel(Base):
@@ -47,7 +101,7 @@ class GlobalModelVersionModel(Base):
     global_loss = Column(Float, nullable=False)
     participating_hospitals = Column(JSON) # List of hospital IDs
     trust_weighted_agg = Column(Boolean, default=True)
-    timestamp = Column(DateTime, default=datetime.utcnow)
+    timestamp = Column(DateTime, default=get_utc_now)
 
 
 class PrivacyAuditModel(Base):
@@ -59,7 +113,7 @@ class PrivacyAuditModel(Base):
     data_type = Column(String, nullable=False) # Image, Text, Tabular
     entities_detected = Column(JSON) # List of detected entity types (e.g. Aadhaar, Name)
     redacted_sample = Column(Text)
-    timestamp = Column(DateTime, default=datetime.utcnow)
+    timestamp = Column(DateTime, default=get_utc_now)
 
 
 class AttackLogModel(Base):
@@ -72,7 +126,7 @@ class AttackLogModel(Base):
     detected = Column(Boolean, default=True)
     trust_penalty = Column(Float, default=15.0)
     action_taken = Column(String, default="Isolated Hospital")
-    timestamp = Column(DateTime, default=datetime.utcnow)
+    timestamp = Column(DateTime, default=get_utc_now)
 
 
 class HospitalAccountModel(Base):
@@ -84,7 +138,7 @@ class HospitalAccountModel(Base):
     hashed_password = Column(String, nullable=False)
     role = Column(String, default="hospital", nullable=False)
     is_active = Column(Boolean, default=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
     last_login = Column(DateTime, nullable=True)
 
 
@@ -96,6 +150,5 @@ class AdminAccountModel(Base):
     hashed_password = Column(String, nullable=False)
     role = Column(String, default="admin", nullable=False)
     is_active = Column(Boolean, default=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
     last_login = Column(DateTime, nullable=True)
-

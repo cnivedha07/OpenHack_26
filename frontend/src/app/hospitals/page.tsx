@@ -3,16 +3,21 @@ import React, { useEffect, useState } from "react";
 import { DashboardSummary } from "@/types";
 import { fetchDashboardMetrics } from "@/services/api";
 import { HospitalCard } from "@/components/HospitalCard";
-import { AlertTriangle } from "lucide-react";
+import { HospitalDatasetUploadManager } from "@/components/HospitalDatasetUploadManager";
+import { AlertTriangle, Building2 } from "lucide-react";
 
 export default function HospitalsPage() {
   const [data, setData] = useState<DashboardSummary | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
+  const refreshMetrics = () => {
     fetchDashboardMetrics()
       .then(setData)
       .catch((e) => setError(e.message || "Failed to load hospital metrics"));
+  };
+
+  useEffect(() => {
+    refreshMetrics();
   }, []);
 
   if (error) {
@@ -30,13 +35,27 @@ export default function HospitalsPage() {
 
   return (
     <div className="min-h-screen bg-[#090d16] text-slate-100 pb-12">
-      <main className="max-w-7xl mx-auto px-6 pt-8 space-y-6">
-        <h1 className="text-xl font-bold text-white">Hospital Nodes</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {data.hospitals.map((h) => <HospitalCard key={h.id} hospital={h} />)}
+      <main className="max-w-7xl mx-auto px-6 pt-8 space-y-8">
+        <div>
+          <p className="text-[11px] uppercase tracking-wide text-slate-500 mb-1">Multi-Tenant Node Management</p>
+          <h1 className="text-xl font-bold text-white flex items-center gap-2">
+            <Building2 className="w-5 h-5 text-emerald-400" /> Participating Hospital Nodes
+          </h1>
+        </div>
+
+        {/* Dataset Upload & Training Flow */}
+        <HospitalDatasetUploadManager onTrainingTriggered={refreshMetrics} />
+
+        {/* Hospital Node Cards Grid */}
+        <div>
+          <h2 className="text-sm font-bold text-white mb-4 uppercase tracking-wider text-slate-400">
+            Active Hospital Nodes ({data.hospitals.length})
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {data.hospitals.map((h) => <HospitalCard key={h.id} hospital={h} />)}
+          </div>
         </div>
       </main>
     </div>
   );
 }
-

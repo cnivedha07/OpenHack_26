@@ -81,7 +81,7 @@ export const AttackControlPanel: React.FC<AttackControlPanelProps> = ({ onRoundC
         <button
           onClick={handleExecuteRound}
           disabled={loading}
-          className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-xs font-semibold shadow-lg shadow-blue-500/20"
+          className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-semibold shadow-lg shadow-emerald-500/20"
         >
           <Play className="w-4 h-4 fill-white" />
           {loading ? "Running Round..." : "Execute FL Round"}
@@ -104,7 +104,7 @@ export const AttackControlPanel: React.FC<AttackControlPanelProps> = ({ onRoundC
           <select
             value={selectedHospital}
             onChange={(e) => setSelectedHospital(e.target.value)}
-            className="w-full p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-blue-500"
+            className="w-full p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-emerald-500"
           >
             <option value="hospital_1">Hospital 1 (Metro General)</option>
             <option value="hospital_2">Hospital 2 (City Care)</option>
@@ -118,8 +118,9 @@ export const AttackControlPanel: React.FC<AttackControlPanelProps> = ({ onRoundC
           <select
             value={attackType}
             onChange={(e) => setAttackType(e.target.value)}
-            className="w-full p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-blue-500"
+            className="w-full p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-emerald-500"
           >
+
             {ATTACK_OPTIONS.map((at) => (
               <option key={at} value={at}>{at}</option>
             ))}
